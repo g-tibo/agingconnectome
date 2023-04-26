@@ -196,10 +196,10 @@ form, .stats, .search-tips, .future {
 
 <form action="/search" method="POST" onsubmit="submitGeneForm(event)" id="gene-form">
   <label for="gene_id">Enter Gene ID, molecule, pathway</label>
-  <input type="text" id="gene_id" name="gene_id" placeholder="lgg-1">
-  <a href="#" onclick="submitFormWith(event, 'dauer')">dauer</a>
-  <a href="#" onclick="submitFormWith(event, 'autophagy')">autophagy</a>
-  <a href="#" onclick="submitFormWith(event, 'ER stress')">ER stress</a>
+  <input type="text" id="gene_id" name="gene_id" placeholder="p53">
+  <a href="#" onclick="submitFormWith(event, 'p53')">p53</a>
+  <a href="#" onclick="submitFormWith(event, 'FOXO')">FOXO</a>
+  <a href="#" onclick="submitFormWith(event, 'ROS')">ROS</a>
   <a href="#" onclick="submitFormWith(event, 'longevity')">longevity</a>
   <br>
   <input type="submit" value="Search">
@@ -215,8 +215,8 @@ form, .stats, .search-tips, .future {
 		
     <form action="/title" method="POST" onsubmit="submitTitleForm(event)" id="title-form">
       <label for="title">Enter paper pubmed ID, separated by semicolon</label>
-      <input type="text" id="title" name="title" placeholder="26503768; 22294619">
-	  <a href="#" onclick="submitFormWith(event, '31408455; 36450261')">31408455; 36450261</a>
+      <input type="text" id="title" name="title" placeholder="33666644; 32777016">
+	  <a href="#" onclick="submitFormWith(event, '33666644; 32777016')">33666644; 32777016</a>
 	  <br>
       <input type="submit" value="Search">
     </form>
@@ -243,8 +243,8 @@ form, .stats, .search-tips, .future {
 	<div class="future">
 	  <h2>Future:</h2>
       <ul>
-        <li>Analyze and extract insights from the entirety of abstracts featured in PubMed-indexed journals</li>
-		<li>Date range: 2004-now</li>
+        <li>Analyze and extract insights from the entirety of abstracts featured in PubMed-indexed journals using the following search criterias [aging, ageing, longevity, or lifespan] and [mammal, <i>C. elegans</i>, or homo sapiens]</li>
+		<li>Date range: 2014-now</li>
       </ul>
     </div>
 	<div class="future">
